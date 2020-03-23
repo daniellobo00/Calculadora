@@ -1,0 +1,42 @@
+<html>
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\Daniel\Desktop\Dev-Learning\Dev-calculadora\Assets\Css\styles2.css">
+    <script src="C:\Users\Daniel\Desktop\Dev-Learning\Dev-calculadora\Assets\JS\calc.js"></script>
+
+<body>
+   
+<div class = "calc">
+        <input type="number" class="resultado" id="resultado">
+        <div class= "option_p">
+            <div class="option_buttons">(</div>
+            <div class="option_buttons">)</div>              
+            <div class="option_buttons">%</div>  
+            <div onclick ="limpar()" class="option_buttons">AC</div>  
+            
+        </div>
+        <div class="number_p">
+             <div id="teste1" onclick="testando(this)" class="number_button">7</div>
+             <div onclick="testando(this)" class="number_button">8</div>  
+             <div onclick="testando(this)" class="number_button">9</div>  
+             <div onclick="testando(this)" class="number_button">4</div>
+             <div onclick="testando(this)" class="number_button">5</div>
+             <div onclick="testando(this)" class="number_button">6</div>  
+             <div onclick="testando(this)" class="number_button">1</div>  
+             <div onclick="testando(this)" class="number_button">2</div> 
+             <div onclick="testando(this)" class="number_button">3</div>
+             <div onclick="testando(this)" class="number_button">0</div>  
+             <div onclick="testando(this)" class="number_button">.</div>  
+             <div onclick="resultado_cal()" class="number_button">&equals;</div> 
+        </div>
+        <div class="operators_p">
+             <div onclick = "divisao()" class="operators_button">&divide;</div>
+             <div onclick = "multiplicacao()" class="operators_button">&times;</div>  
+             <div onclick = "subtracao()" class="operators_button">&minus;</div>  
+             <div onclick="soma()" class="operators_button">&plus;</div>
+        </div>
+        
+</div>
+
+</body>
+
+</html>
