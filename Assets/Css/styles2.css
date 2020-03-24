@@ -1,0 +1,110 @@
+
+body{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    
+}
+
+.calc {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(6, 75px);
+    border-radius: 10px;
+    gap: 2px;
+    border: 2px solid black
+    
+} 
+.option_p {
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+    gap: 2px;
+    
+}
+
+.number_p {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
+    gap: 2px;
+}   
+
+.operators_p {
+    background-color: black;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    cursor: pointer;
+    gap: 2px;
+}
+.resultado {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.number_button {
+    background-color: gray;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 20%;
+    margin: 1px;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bold;
+    
+}
+
+.operators_button {
+    background-color: orange;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.option_buttons {
+    background-color: green;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+input{
+    border: 2px solid black;
+    border-bottom: none;
+}
+
+.resultado {
+    text-align: right;
+    font-size: 20px;
+    
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
